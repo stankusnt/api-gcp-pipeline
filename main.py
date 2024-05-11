@@ -1,4 +1,5 @@
-from payments_api import create_payment, retrieve_payments
+from src.create import create_payment
+from src.extract import retrieve_payments
 import logging
 logging.basicConfig(filename='activity.log', encoding='utf-8', level=logging.DEBUG)
 logger = logging.getLogger(__name__)
