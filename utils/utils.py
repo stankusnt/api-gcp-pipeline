@@ -39,17 +39,29 @@ def parse_api_call(data_input):
         return response
 
     def request_test(data_input: dict):
-            expected_input_size = len(data_input['id'])
-            for column, array in data_input.items():
+        expected_input_size = len(data_input['id'])
+        mismatched_col_list = []
+        for column, array in data_input.items():
 
-                if len(array) != expected_input_size:
-                    logging.warning(f'{column} does not equal {expected_input_size} with {len(array)}.')
-            return None
+            if len(array) != expected_input_size:
+                mismatched_col_list.append(column)
+                logging.warning(f'{column} does not equal {expected_input_size} with {len(array)}.')
+        return mismatched_col_list
+
+    def remove_mismatched_cols(data_input: dict, mismatched_col_list: list):
+        for item in mismatched_col_list:
+            data_input.pop(item)
+            logging.warning(f'Removed {item} from return value.')
+        return None
 
     response_body = parse_json(data_input)
-    request_test(response_body)
-    # Remove misshaped data
-    check = response_body.pop('amount_money_currency', 'receipt_url')
-    response_body.pop('cursor')
+    mismatched_col_list = request_test(response_body)
+    remove_mismatched_cols(response_body, mismatched_col_list)
+    # # Remove misshaped data
+    # check = response_body.pop('amount_money_currency', 'receipt_url')
+    # try:
+    #     response_body.pop('cursor')
+    # except KeyError:
+    #     pass
     response_body = pd.DataFrame.from_dict(data = response_body)
     return response_body
