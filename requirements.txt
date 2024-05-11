@@ -1,0 +1,5 @@
+squareup
+python-dotenv
+pandas==2.2.2
+#dataclasses
+#logging
