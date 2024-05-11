@@ -1,7 +1,4 @@
-import json
 import pandas as pd
-import dataclasses as dataclass
-import warnings
 import logging
 
 
@@ -25,7 +22,7 @@ def parse_api_call(data_input):
                     nested_column = str(nested_prefix) + key
                     if nested_column in response:
                         response[nested_column].append(value)
-                    elif nested == True:
+                    elif nested:
                         response[nested_column] = [value]
                     elif key in response:
                         response[key].append(value)

@@ -2,7 +2,6 @@ from square.http.auth.o_auth_2 import BearerAuthCredentials
 from square.client import Client
 import os
 from dotenv import load_dotenv
-import json
 from utils.utils import parse_api_call
 import logging
 load_dotenv()
