@@ -1,20 +1,15 @@
 from square.http.auth.o_auth_2 import BearerAuthCredentials
 from square.client import Client
+from utils.credentials import square_access
 import os
 from dotenv import load_dotenv
 load_dotenv()
 
 def run():
-
-    client = Client(
-        bearer_auth_credentials=BearerAuthCredentials(
-            access_token=os.environ['SQUARE_ACCESS_TOKEN']
-        ),
-        environment='sandbox')
-
+    client = square_access()
     result = client.locations.list_locations()
 
-    for i in range(101, 100000):
+    for i in range(101, 10000):
         result = client.payments.create_payment(
             body = {
                 "source_id": "cnon:card-nonce-ok",
@@ -25,6 +20,7 @@ def run():
                 }
             }
         )
+        yield i
 
     if result.is_success():
         print(result.body)

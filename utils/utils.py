@@ -37,6 +37,7 @@ def parse_api_call(data_input):
         else:
             exit
         return response
+
     def request_test(data_input: dict):
             expected_input_size = len(data_input['id'])
             for column, array in data_input.items():
@@ -47,7 +48,7 @@ def parse_api_call(data_input):
 
     response_body = parse_json(data_input)
     request_test(response_body)
-    # Remove repeated currency column
+    # Remove misshaped data
     check = response_body.pop('amount_money_currency', 'receipt_url')
     response_body.pop('cursor')
     response_body = pd.DataFrame.from_dict(data = response_body)

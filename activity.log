@@ -169,3 +169,62 @@ INFO:root:<bound method DataFrame.info of                                id     
 
 [100 rows x 34 columns]>
 INFO:root:API call was successful
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): connect.squareupsandbox.com:443
+DEBUG:urllib3.connectionpool:https://connect.squareupsandbox.com:443 "GET /v2/payments HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): connect.squareupsandbox.com:443
+DEBUG:urllib3.connectionpool:https://connect.squareupsandbox.com:443 "GET /v2/payments HTTP/1.1" 200 None
+WARNING:root:amount_money_currency does not equal 100 with 200.
+WARNING:root:cursor does not equal 100 with 1.
+INFO:root:<bound method DataFrame.info of                                id                created_at  ...     application_details_application_id                                  version_token
+0   LL3MpiSY1UJkTK20yPHKzA2ANRRZY  2024-05-11T01:59:41.949Z  ...  sandbox-sq0idb-kUkgPZsjXviQduph8QQWYA  jzWJCLgd1fziPEfmRFZ7QdtDmB2W680oX4cZq7Sjj255o
+1   vrikQMQhNUrK33nu9a70gpycdTeZY  2024-05-11T01:59:41.177Z  ...  sandbox-sq0idb-kUkgPZsjXviQduph8QQWYA  LTOnumwRAXBPkV9TuGUvQ4cnATbvDna7hbAnnPJWS7A6o
+2   7FY8JaXU3shc52TaTN3IPFi9qINZY  2024-05-11T01:59:40.392Z  ...  sandbox-sq0idb-kUkgPZsjXviQduph8QQWYA  hB3OTOq2qIpyRjJhV7fZ3WbRXnqz7sIGKJTdAl6WEmX6o
+3   PPanQxffXage21Jkm9CB9LGn725YY  2024-05-11T01:59:39.411Z  ...  sandbox-sq0idb-kUkgPZsjXviQduph8QQWYA  h1UUUNvVZv8FMBmOITOmWo0oiItBXTZIGXaL6T7bhaS6o
+4   nbcYI30orCOHkE5Uk5mdzkcVv2NZY  2024-05-11T01:59:38.549Z  ...  sandbox-sq0idb-kUkgPZsjXviQduph8QQWYA  0uSDKI6nCAIGIwctkweyEeAQc4xhulWHLPQHu0GH9jd6o
+..                            ...                       ...  ...                                    ...                                            ...
+95  tyQj7ftHgWdys6MhFe0FKqdy6ScZY  2024-05-11T01:58:23.681Z  ...  sandbox-sq0idb-kUkgPZsjXviQduph8QQWYA  NPeEGnutgybmfebKANJ1rTqzA7IDIvQ9RKyDI9XqZ3L6o
+96  zXlXINIZolviPJ3EcuDeLFGI0sEZY  2024-05-11T01:58:22.870Z  ...  sandbox-sq0idb-kUkgPZsjXviQduph8QQWYA  GyaBstRvcJXbAzHAjSU2HUXUxvmMB4ViaWslneRZFMm6o
+97  92IG0ap7ceDIwbrm7zhxI5Rpvx8YY  2024-05-11T01:58:21.995Z  ...  sandbox-sq0idb-kUkgPZsjXviQduph8QQWYA  6PR9x2ByXWjuYYmAHPd2D4Tseio7exLvEHEFErLGEjZ6o
+98  1UxG8jKzl6xdqeO6hmYVriEXdRNZY  2024-05-11T01:58:21.162Z  ...  sandbox-sq0idb-kUkgPZsjXviQduph8QQWYA  dqxGJnhQceHzBihAh69hWaL0VeZYeGT2f3MkHZXCbzh6o
+99  twFYSSQIz29nUNF7j2UbTHn6LuQZY  2024-05-11T01:58:20.344Z  ...  sandbox-sq0idb-kUkgPZsjXviQduph8QQWYA  9qRSdfOsE7C9aLyIpSjdmcBIshhLDZRuXggdAONiv5T6o
+
+[100 rows x 34 columns]>
+INFO:root:API call was successful
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): connect.squareupsandbox.com:443
+DEBUG:urllib3.connectionpool:https://connect.squareupsandbox.com:443 "GET /v2/payments HTTP/1.1" 200 None
+WARNING:root:amount_money_currency does not equal 100 with 200.
+WARNING:root:cursor does not equal 100 with 1.
+INFO:root:<bound method DataFrame.info of                                id                created_at  ...     application_details_application_id                                  version_token
+0   LL3MpiSY1UJkTK20yPHKzA2ANRRZY  2024-05-11T01:59:41.949Z  ...  sandbox-sq0idb-kUkgPZsjXviQduph8QQWYA  jzWJCLgd1fziPEfmRFZ7QdtDmB2W680oX4cZq7Sjj255o
+1   vrikQMQhNUrK33nu9a70gpycdTeZY  2024-05-11T01:59:41.177Z  ...  sandbox-sq0idb-kUkgPZsjXviQduph8QQWYA  LTOnumwRAXBPkV9TuGUvQ4cnATbvDna7hbAnnPJWS7A6o
+2   7FY8JaXU3shc52TaTN3IPFi9qINZY  2024-05-11T01:59:40.392Z  ...  sandbox-sq0idb-kUkgPZsjXviQduph8QQWYA  hB3OTOq2qIpyRjJhV7fZ3WbRXnqz7sIGKJTdAl6WEmX6o
+3   PPanQxffXage21Jkm9CB9LGn725YY  2024-05-11T01:59:39.411Z  ...  sandbox-sq0idb-kUkgPZsjXviQduph8QQWYA  h1UUUNvVZv8FMBmOITOmWo0oiItBXTZIGXaL6T7bhaS6o
+4   nbcYI30orCOHkE5Uk5mdzkcVv2NZY  2024-05-11T01:59:38.549Z  ...  sandbox-sq0idb-kUkgPZsjXviQduph8QQWYA  0uSDKI6nCAIGIwctkweyEeAQc4xhulWHLPQHu0GH9jd6o
+..                            ...                       ...  ...                                    ...                                            ...
+95  tyQj7ftHgWdys6MhFe0FKqdy6ScZY  2024-05-11T01:58:23.681Z  ...  sandbox-sq0idb-kUkgPZsjXviQduph8QQWYA  NPeEGnutgybmfebKANJ1rTqzA7IDIvQ9RKyDI9XqZ3L6o
+96  zXlXINIZolviPJ3EcuDeLFGI0sEZY  2024-05-11T01:58:22.870Z  ...  sandbox-sq0idb-kUkgPZsjXviQduph8QQWYA  GyaBstRvcJXbAzHAjSU2HUXUxvmMB4ViaWslneRZFMm6o
+97  92IG0ap7ceDIwbrm7zhxI5Rpvx8YY  2024-05-11T01:58:21.995Z  ...  sandbox-sq0idb-kUkgPZsjXviQduph8QQWYA  6PR9x2ByXWjuYYmAHPd2D4Tseio7exLvEHEFErLGEjZ6o
+98  1UxG8jKzl6xdqeO6hmYVriEXdRNZY  2024-05-11T01:58:21.162Z  ...  sandbox-sq0idb-kUkgPZsjXviQduph8QQWYA  dqxGJnhQceHzBihAh69hWaL0VeZYeGT2f3MkHZXCbzh6o
+99  twFYSSQIz29nUNF7j2UbTHn6LuQZY  2024-05-11T01:58:20.344Z  ...  sandbox-sq0idb-kUkgPZsjXviQduph8QQWYA  9qRSdfOsE7C9aLyIpSjdmcBIshhLDZRuXggdAONiv5T6o
+
+[100 rows x 34 columns]>
+INFO:root:API call was successful
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): connect.squareupsandbox.com:443
+DEBUG:urllib3.connectionpool:https://connect.squareupsandbox.com:443 "GET /v2/payments HTTP/1.1" 200 None
+WARNING:root:amount_money_currency does not equal 100 with 200.
+WARNING:root:cursor does not equal 100 with 1.
+INFO:root:<bound method DataFrame.info of                                id                created_at  ...     application_details_application_id                                  version_token
+0   LL3MpiSY1UJkTK20yPHKzA2ANRRZY  2024-05-11T01:59:41.949Z  ...  sandbox-sq0idb-kUkgPZsjXviQduph8QQWYA  jzWJCLgd1fziPEfmRFZ7QdtDmB2W680oX4cZq7Sjj255o
+1   vrikQMQhNUrK33nu9a70gpycdTeZY  2024-05-11T01:59:41.177Z  ...  sandbox-sq0idb-kUkgPZsjXviQduph8QQWYA  LTOnumwRAXBPkV9TuGUvQ4cnATbvDna7hbAnnPJWS7A6o
+2   7FY8JaXU3shc52TaTN3IPFi9qINZY  2024-05-11T01:59:40.392Z  ...  sandbox-sq0idb-kUkgPZsjXviQduph8QQWYA  hB3OTOq2qIpyRjJhV7fZ3WbRXnqz7sIGKJTdAl6WEmX6o
+3   PPanQxffXage21Jkm9CB9LGn725YY  2024-05-11T01:59:39.411Z  ...  sandbox-sq0idb-kUkgPZsjXviQduph8QQWYA  h1UUUNvVZv8FMBmOITOmWo0oiItBXTZIGXaL6T7bhaS6o
+4   nbcYI30orCOHkE5Uk5mdzkcVv2NZY  2024-05-11T01:59:38.549Z  ...  sandbox-sq0idb-kUkgPZsjXviQduph8QQWYA  0uSDKI6nCAIGIwctkweyEeAQc4xhulWHLPQHu0GH9jd6o
+..                            ...                       ...  ...                                    ...                                            ...
+95  tyQj7ftHgWdys6MhFe0FKqdy6ScZY  2024-05-11T01:58:23.681Z  ...  sandbox-sq0idb-kUkgPZsjXviQduph8QQWYA  NPeEGnutgybmfebKANJ1rTqzA7IDIvQ9RKyDI9XqZ3L6o
+96  zXlXINIZolviPJ3EcuDeLFGI0sEZY  2024-05-11T01:58:22.870Z  ...  sandbox-sq0idb-kUkgPZsjXviQduph8QQWYA  GyaBstRvcJXbAzHAjSU2HUXUxvmMB4ViaWslneRZFMm6o
+97  92IG0ap7ceDIwbrm7zhxI5Rpvx8YY  2024-05-11T01:58:21.995Z  ...  sandbox-sq0idb-kUkgPZsjXviQduph8QQWYA  6PR9x2ByXWjuYYmAHPd2D4Tseio7exLvEHEFErLGEjZ6o
+98  1UxG8jKzl6xdqeO6hmYVriEXdRNZY  2024-05-11T01:58:21.162Z  ...  sandbox-sq0idb-kUkgPZsjXviQduph8QQWYA  dqxGJnhQceHzBihAh69hWaL0VeZYeGT2f3MkHZXCbzh6o
+99  twFYSSQIz29nUNF7j2UbTHn6LuQZY  2024-05-11T01:58:20.344Z  ...  sandbox-sq0idb-kUkgPZsjXviQduph8QQWYA  9qRSdfOsE7C9aLyIpSjdmcBIshhLDZRuXggdAONiv5T6o
+
+[100 rows x 34 columns]>
+INFO:root:API call was successful

@@ -3,16 +3,13 @@ from square.client import Client
 import os
 from dotenv import load_dotenv
 from utils.utils import parse_api_call
+from utils.credentials import square_access
 import logging
 load_dotenv()
 
-def run():
-    client = Client(
-        bearer_auth_credentials=BearerAuthCredentials(
-            access_token=os.environ['SQUARE_ACCESS_TOKEN']
-        ),
-        environment='sandbox')
 
+def run():
+    client = square_access()
     result = client.payments.list_payments()
 
     response = parse_api_call(result.body)
