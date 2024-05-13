@@ -28,6 +28,7 @@ def run():
             else:
                 break
         response = pd.concat(response_dataframes[:-1])
+        response = response.reset_index(drop=True)
         # Loading payments
         response.to_csv(os.environ['file_path'])
         logging.info('API call was successful')
