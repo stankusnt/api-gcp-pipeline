@@ -18,7 +18,7 @@ def parse_api_call(data_input):
         # Handle dictionaries
         elif isinstance(data_input, dict):
             for key, value in data_input.items():
-                if isinstance(value, str):
+                if isinstance(value, str | int):
                     nested_column = str(nested_prefix) + key
                     if nested_column in response:
                         response[nested_column].append(value)
