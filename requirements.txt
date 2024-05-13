@@ -1,5 +1,8 @@
 squareup
 python-dotenv
 pandas==2.2.2
+google-cloud-bigquery
 #dataclasses
 #logging
+
+

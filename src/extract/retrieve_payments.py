@@ -1,6 +1,7 @@
 from dotenv import load_dotenv
 from utils.utils import parse_api_call
 from utils.credentials import square_access
+import os
 import logging
 import pandas as pd
 import numpy as np
@@ -24,11 +25,11 @@ def run():
                     cursor=result.cursor
                 )
                 counter = counter+1
-                print(counter+1)
             else:
                 break
         response = pd.concat(response_dataframes[:-1])
-        response.to_csv('/Users/stankusnt/api-test-dir/payments.csv')
+        # Loading payments
+        response.to_csv(os.environ['file_path'])
         logging.info('API call was successful')
     elif result.is_error():
         logging.info('API call was unsuccessful')
