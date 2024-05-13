@@ -3,7 +3,7 @@
 
 Project structure is as follows:
 
-![alt text](image.png)
+![alt text](image-4.png)
 
 Google Cloud Storage Bucket:
 
