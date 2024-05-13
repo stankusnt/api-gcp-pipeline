@@ -1,7 +1,7 @@
 ## API Showcase 
 
 
-Project structure is as follows:
+Project Outline:
 
 ![alt text](image-4.png)
 
